@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CentOS搭建gilab | Hvai&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="我的个人网站,暂支持文章发布">
+    
+    <link rel="preload" href="/assets/css/0.styles.5927218b.css" as="style"><link rel="preload" href="/assets/js/app.ed85d410.js" as="script"><link rel="preload" href="/assets/js/2.623b8d0e.js" as="script"><link rel="preload" href="/assets/js/8.10150ff1.js" as="script"><link rel="prefetch" href="/assets/js/3.e90a5081.js"><link rel="prefetch" href="/assets/js/4.f1262b84.js"><link rel="prefetch" href="/assets/js/5.4ec22439.js"><link rel="prefetch" href="/assets/js/6.5b4cf8c3.js"><link rel="prefetch" href="/assets/js/7.6d2e9f5d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5927218b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hvai's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/accumulate/" class="nav-link">
+  前端基础
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法题库
+</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百度
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/accumulate/" class="nav-link">
+  前端基础
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法题库
+</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百度
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>CentOS搭建gilab</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docker.html#centos搭建gilab" class="sidebar-link">CentOS搭建gilab</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="centos搭建gilab"><a href="#centos搭建gilab" class="header-anchor">#</a> CentOS搭建gilab</h2> <ul><li><a href="https://about.gitlab.com/install/#centos-8" target="_blank" rel="noopener noreferrer">官方文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>步骤安装 root 安装去除所有sudo 命令<div class="language- extra-class"><pre class="language-text"><code># 允许sshd 远程服务 
+sudo dnf install -y curl policycoreutils openssh-server
+sudo systemctl enable sshd
+sudo systemctl start sshd
+
+# 防火墙永久允许接受https 和http 请求，没有ssh证书可以使用http 作为gitlab 请求 协议，建议使用https 
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+sudo systemctl reload firewalld
+# 支持邮件服务
+sudo dnf install postfix
+sudo systemctl enable postfix
+sudo systemctl start postfix
+#添加gitlab 报仓库
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
+# 安装gitlab 并设置默认的外界访问地址 
+sudo EXTERNAL_URL=&quot;https://gitlab.example.com&quot; dnf install -y gitlab-ee
+#以上已安装 默认访问地址需要修改(一般为本机ip+端后口或者nginx 转发)
+ # 查看安装版本 cat /opt/gitlab/embedded/service/gitlab-rails/VERSION
+#修改配置访问地址 
+ vi etc/gitlab/gitlab.rb 
+ #找到该行 external_url 'https://gitlab.example.com'
+ #修改后 external_url 'http://192.168.3.100:8088' (我本机CentOS地址3.100)
+ # 退出vim 编译器 重新启动配置 之后需要重启gitlab 
+ sudo gitlab-ctl reconfigure
+  #启动gitlab服务
+   sudo gitlab-ctl start
+  #gitlab服务停止
+   sudo gitlab-ctl stop
+  #重启gitlab服务
+   sudo gitlab-ctl restart
+# 浏览器直接访问 http://192.168.3.100:8088  可达到刚配置的 gitlab ，第一次访问默认root 登录，需要自己设置密码
+
+</code></pre></div></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ed85d410.js" defer></script><script src="/assets/js/2.623b8d0e.js" defer></script><script src="/assets/js/8.10150ff1.js" defer></script>
+  </body>
+</html>

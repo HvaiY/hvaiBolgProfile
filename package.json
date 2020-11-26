@@ -1,0 +1,17 @@
+{
+  "name": "vuepressblogdemo",
+  "version": "1.0.0",
+  "description": "个人博客",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy":"deploy.sh"
+  },
+  "author": "ben",
+  "license": "MIT"
+}
