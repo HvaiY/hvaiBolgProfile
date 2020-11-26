@@ -12,10 +12,13 @@ cd docs/.vuepress/dist
 # 如果是发布到自定义域名
 # echo 'www.yourwebsite.com' > CNAME
 
+set nowdate= date
+set dep = deploy
+set result=%nowdate%,%dep%
 #第一次发布执行
 #git init
 git add -A
-git commit -m 'deploy'data
+git commit -m result
 #第一次发布执行
 #git branch -M main
 #第一次发布执行
