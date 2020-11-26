@@ -12,12 +12,16 @@ cd docs/.vuepress/dist
 # 如果是发布到自定义域名
 # echo 'www.yourwebsite.com' > CNAME
 
-set nowdate= date
-set dep = deploy
-set result=%nowdate%,%dep%
+echo "-------Begin Git-------"
 #第一次发布执行
 #git init
+
+git status
 git add -A
+read -p "提交信息:" commitinfo
+git commit -m $commitinfo
+
+
 git commit -m result
 #第一次发布执行
 #git branch -M main
@@ -28,5 +32,5 @@ git push -u origin main
 
 # 如果发布到 https://USERNAME.github.io/<REPO>  REPO=github上的项目
 # git push -f git@github.com:USERNAME/<REPO>.git master:gh-pages
-
+echo "--------End Git--------"
 cd -
