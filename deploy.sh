@@ -15,7 +15,7 @@ cd docs/.vuepress/dist
 #第一次发布执行
 #git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy'data
 #第一次发布执行
 #git branch -M main
 #第一次发布执行
