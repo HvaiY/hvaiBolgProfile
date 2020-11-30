@@ -32,6 +32,18 @@ git commit -m $commitinfo
 git push -u origin main
 cd ../
 rm -rf HvaiY.github.io/
+
+# gitee 第一次
+# mkdir yuanlonghai
+# cp ./dist/ ./yuanlonghai
+# cd yuanlonghai
+# git init
+# git add -A
+# git commit -m "初始化"
+# git remote add origin https://gitee.com/yuanlonghai/yuanlonghai.git
+# git push -u origin master
+# cd ../
+# rm -rf yuanlonghai
 # git rebase remotes/origin/main
 # git rebase --continue
 #git merge main

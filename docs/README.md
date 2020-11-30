@@ -1,4 +1,5 @@
 ####  测试 我的文章 
+##### [搭建gitlab私有库](gitlab.html)
 
  ``` js
 export default {

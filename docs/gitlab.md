@@ -1,7 +1,7 @@
 ## CentOS搭建gilab
   - [官方文档](https://about.gitlab.com/install/#centos-8)
   - 步骤安装 root 安装去除所有sudo 命令
-    ```
+    ``` bash
     # 允许sshd 远程服务 
     sudo dnf install -y curl policycoreutils openssh-server
     sudo systemctl enable sshd
