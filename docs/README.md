@@ -1,5 +1,27 @@
-####  测试 我的文章 
-##### [搭建gitlab私有库](gitlab.html)
+<!-- [[toc]] -->
+## 测试 我的文章 
+## [Home](/)
+## [CentOS 搭建Gitlab私有代码托管服务](/gitlab)
+## [MarkDown基础语法](/MD/MarkDownDemo.html)
+  - [MarkDown基础语法](/MD/MarkDownDemo)
+
+<!-- --- 
+home: true
+heroImage: /hero.png
+heroText: Hero 标题
+tagline: Hero 副标题
+actionText: 快速上手 →
+actionLink: /zh/guide/
+features:
+- title: 简洁至上
+  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+- title: Vue驱动
+  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+- title: 高性能
+  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+footer: MIT Licensed | Copyright © 2018-present Evan You
+---
+
 
  ``` js
 export default {
@@ -23,4 +45,4 @@ this is a tip
 this is a tip
 :::
 - [emoji](https://www.webfx.com/tools/emoji-cheat-sheet/)
-:tada: :100: :bamboo: :gift_heart: :fire:
+:tada: :100: :bamboo: :gift_heart: :fire: -->
