@@ -12,33 +12,41 @@ module.exports = {
   markdown: {
     lineNumbers: true // 代码块显示行号
   },
+  // 默认路径
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': '/technology'
+      }
+    }
+  }, 
   themeConfig: {
     nav: [ // 导航栏配置
       {
         text: '前端基础',
-        link: '/accumulate/'
+        link: '/technology/accumulate/'
       },
       {
         text: '算法题库',
-        link: '/algorithm/'
+        link: '/technology/algorithm/'
       },
       {
-        text: '百度',
-        link: 'https://baidu.com'
+        text: '其它',
+        link: '/technology/operations/'
       }
     ],
-    // sidebar: 'auto', // 侧边栏配置
+     sidebar: 'auto', // 侧边栏配置
     sidebar: [{
-      title: 'Home',
+      title: 'Ben',
       collapsable: true,
       path:'/'
     }, {
       title: 'MarkDown文档',
       collapsable: true,
       // path:'/MD/',
-       children: [{title:'MarkDown使用',path:'./MD/MarkDownDemo',collapsable: false,}]
+       children: [{title:'MarkDown使用',path:'/technology/md/MarkDownDemo',collapsable: false,}]
     }],
-    // sidebarDepth: 2, // 侧边栏显示2级
+     sidebarDepth: 2, // 侧边栏显示2级
   },
   markdown: {
     // markdown-it-anchor 的选项
