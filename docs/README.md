@@ -1,6 +1,5 @@
 <!-- [[toc]] -->
 ## 测试 我的文章 
-## [Home](/)
 ## [CentOS 搭建Gitlab私有代码托管服务](/gitlab)
 ## [MarkDown基础语法](/MD/MarkDownDemo.html)
   - [MarkDown基础语法](/MD/MarkDownDemo)

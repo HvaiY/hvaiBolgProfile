@@ -45,7 +45,12 @@ module.exports = {
       collapsable: true,
       // path:'/MD/',
        children: [{title:'MarkDown使用',path:'/technology/md/MarkDownDemo',collapsable: false,}]
-    }],
+    },{
+      title:'杂项',
+      collapsable:false,
+      path:'/technology/operations/'
+    }
+  ],
      sidebarDepth: 2, // 侧边栏显示2级
   },
   markdown: {
